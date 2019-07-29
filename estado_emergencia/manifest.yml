@@ -1,0 +1,5 @@
+---
+applications:
+ - name: smsAlert
+   random-route: true
+   memory: 128M

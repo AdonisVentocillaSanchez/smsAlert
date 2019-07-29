@@ -32,7 +32,7 @@ class StatusPageState extends State<StatusPage> {
 
   @override
   Widget build(BuildContext context) {
-    List<String> recipents = ["955312775"];
+    List<String> recipents = ["950999807"];
     return Scaffold(
       appBar: AppBar(
         title: const Text('Status de Emergencia'),
@@ -109,12 +109,12 @@ class StatusPageState extends State<StatusPage> {
                     onPressed: () {
                       if (fractura1 == true) {
                         print("Fracturas Graves");
-                        _sendSMS(lat.toString(), lng.toString(), "954759224", 1,
+                        _sendSMS(lat.toString(), lng.toString(), "950999807", 1,
                             recipents);
                       }
                       if (fractura2 == true) {
                         print("Fracturas Leves");
-                        _sendSMS(lat.toString(), lng.toString(), "954759224", 2,
+                        _sendSMS(lat.toString(), lng.toString(), "950999807", 2,
                             recipents);
                       }
                     },
@@ -143,7 +143,7 @@ class StatusPageState extends State<StatusPage> {
     for (var i = 0; i < recipents.length; i++) {
       SmsMessage message = new SmsMessage(
           recipents[i],
-          'https://www.readeranswer.com/index.php?lat=' +
+          'https://smsalert.mybluemix.net?lat=' +
               lat +
               '&lng=' +
               lng +
